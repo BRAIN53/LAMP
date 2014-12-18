@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">3dSlidingLayoutDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lights">我的灯</string>
+    <string name="mygroups">我的分组</string>
+    <string name="scenes">场景模式</string>
+    <string name="updatesoft">软件更新</string>
+    <string name="aboutus">关于我们</string>
+    <string name="check">检查新版本</string>
+    <string name="setScene">设置自动场景</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="host">http://http://shuncom.3322.org:12350/yii/shuncom/index.php/</string>
+    
+    
+
+</resources>

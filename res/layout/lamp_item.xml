@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    
+     >
+
+    <ImageView
+        android:id="@+id/lampState"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/lamp"
+        android:layout_centerVertical="true"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/lampName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lampState"
+        android:text="Lamp 1"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	 <Button
+        android:id="@+id/lampSwitch"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@id/lampName"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="" 
+        android:background="@drawable/standby"/>
+
+    <ImageView
+        android:id="@+id/lampSetting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="7dp"
+        android:src="@drawable/settings_blue" />
+    
+   <!--  <ImageView
+        android:id="@+id/lampSetting"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="7dp"
+        android:src="@drawable/standby" /> -->
+
+<!--     <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting" /> -->
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/colorXYLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#666666">
+    
+    <Button
+        android:id="@+id/btnColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffddff"
+        android:text="color"
+        android:textColor="#082e54" />
+
+    <RelativeLayout
+        android:id="@+id/colorXY"
+        android:layout_width="720px"
+        android:layout_height="300px"
+        android:padding="3px" >
+
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/RLControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3px" 
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnOpenCloseLamp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_style_red_blue"
+            android:text="开灯"
+            android:textColor="@color/color_panel" 
+            android:tag="btnOpenCloseLamp" 
+            android:onClick="openCloseLamp"/>
+
+        <Button
+            android:id="@+id/btnSetScene"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/btnOpenCloseLamp"
+            android:background="@drawable/button_style_red_blue"
+            android:text="绑定场景"
+            android:textColor="@color/color_panel" 
+            android:tag="btnSetScene"
+            android:onClick="bindScene"/>
+
+        <Button
+            android:id="@+id/btnAddLamp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnOpenCloseLamp"
+            android:background="@drawable/button_style_red_blue"
+            android:text="添加灯"
+            android:textColor="@color/color_panel" 
+            android:tag="btnAddLamp"
+            android:onClick="addLamp"/>
+
+        <Button
+            android:id="@+id/btnDeleteLamp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnSetScene"
+            android:layout_toRightOf="@id/btnAddLamp"
+            android:background="@drawable/button_style_red_blue"
+            android:text="刪除"
+            android:textColor="@color/color_panel" 
+            android:tag="btnDeleteLamp"
+            android:onClick="deleteLamp"/>
+
+        <Button
+            android:id="@+id/btnDissolveGroup"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnDeleteLamp"
+            android:background="@drawable/button_style_red_blue"
+            android:text="解散组"
+            android:textColor="@color/color_panel" 
+            android:tag="btnDissolveGroup"
+            android:onClick="dissolveGroup"/>
+
+        <Button
+            android:id="@+id/btnChangeName"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/btnDeleteLamp"
+            android:layout_alignTop="@+id/btnDissolveGroup"
+            android:background="@drawable/button_style_red_blue"
+            android:onClick="changeName"
+            android:tag="btnChangeName"
+            android:text="改名字"
+            android:textColor="@color/color_panel" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

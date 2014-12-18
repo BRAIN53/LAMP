@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" 
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/groupName"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="客厅"
+            android:padding="3dp"
+            android:layout_marginLeft="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+	        android:id="@+id/groupSwitch"
+	        android:layout_width="45dp"
+	        android:layout_height="45dp"
+	        android:layout_toRightOf="@id/groupName"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="20dp"
+	        android:text="" 
+	        android:background="@drawable/standby"/>
+        	    
+        <Button
+            android:id="@+id/groupSet"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/settings_blue"
+            android:text="" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/groupGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4" 
+        android:visibility="gone"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+    </GridView>
+
+</LinearLayout>
