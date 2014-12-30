@@ -33,6 +33,21 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+
+/*
+
+fasdfad
+
+adf
+
+adddsf
+
+
+
+*/
+
+
+
 /**
  * Displays a holo-themed color picker.
  * 
