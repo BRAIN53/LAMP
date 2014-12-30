@@ -375,6 +375,18 @@ public class ColorPicker extends View {
 
 		int width;
 		int height;
+		
+		/*
+
+fasdfad
+
+adf
+
+adddsf
+
+adsfasdfasdfasd
+
+*/
 
 		if (widthMode == MeasureSpec.EXACTLY) {
 			width = widthSize;
